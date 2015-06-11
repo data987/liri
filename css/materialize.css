@@ -2018,7 +2018,7 @@ ul {
   -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19); }
 
-.z-depth-4, .modal {
+.z-depth-4, .btn:hover, .modal {
   -webkit-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
   -moz-box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
   box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21); }
@@ -2082,7 +2082,8 @@ img.responsive-img, video.responsive-video {
 .parallax-container {
   position: relative;
   overflow: hidden;
-  height: 500px; }
+  /*height: 500px;*/ 
+  height: 80vh; }
 
 .parallax {
   position: absolute;
@@ -2097,7 +2098,7 @@ img.responsive-img, video.responsive-video {
     left: 50%;
     bottom: 0;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100%; 
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     transform: translateX(-50%); }

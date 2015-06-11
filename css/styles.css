@@ -1,3 +1,12 @@
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
 *,
 .columns {
   margin: 0;
@@ -41,13 +50,20 @@ p {
 .about p {
   font-size: 1.5em;
 }
+.emailTo {
+  max-width: 40%;
+  margin: 0 auto;
+}
 .box1 {
   overflow: hidden;
-  height: 43rem;
+  height: 38rem;
   padding: 2em;
 }
 .box-white {
   padding: 3em 0 0 0;
+}
+.black-img {
+  background-color: rgba(0,0,0,0.3);
 }
 /*** Clients ***/
 .clients p {
@@ -57,8 +73,6 @@ p {
 .emailTo {
   width: 100%;
 }
-/**.input-field
-	padding 2em**/
 /*** Features ***/
 .features {
   padding: 5em;
@@ -72,12 +86,17 @@ p {
 .f_right {
   text-align: left;
 }
-.img_s {
-  height: 90vh;
-  overflow: hidden;
+.footer {
+  padding-bottom: 2em;
 }
-.img_s img {
-  min-width: 100%;
+.form_cont {
+  height: 50vh;
+  margin: 0 2em 0 0;
+  padding: 2em 5em 2em 5em;
+  width: 45%;
+}
+.img_size {
+  max-width: 100% !important;
 }
 /*** Info of features ***/
 .info_f {
@@ -89,5 +108,41 @@ p {
 .menu {
   position: fixed;
   width: 100%;
+  z-index: 4;
+}
+.welcome {
+  position: absolute;
+  top: 8em;
   z-index: 2;
+}
+/*
+	=========================================
+	Label's color
+	=========================================
+*/
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #42a5f5;
+}
+.input-field input[type=email]:focus + label {
+  color: #42a5f5;
+}
+.input-field input[type=tel]:focus + label {
+  color: #42a5f5;
+}
+.input-field input[type=password]:focus + label {
+  color: #42a5f5;
+}
+.input-field input[type=date]:focus + label {
+  color: #42a5f5;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=tel]:focus,
+.input-field input[type=password]:focus,
+.input-field input[type=date]:focus {
+  border-bottom: 1px solid #42a5f5;
+  -webkit-box-shadow: 0 1px 0 0 #42a5f5;
+  box-shadow: 0 1px 0 0 #42a5f5;
 }

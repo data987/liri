@@ -5,9 +5,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Liri | Landing page</title>
+	<link rel="stylesheet" href="css/materialize.css">
 	<link rel="stylesheet" href="css/foundation.css" />
 	<link rel="stylesheet" href="css/styles.css">
-	<link rel="stylesheet" href="css/materialize.css">
 	<script src="lib/vendor/modernizr.js"></script>
 </head>
 <body>
@@ -17,24 +17,62 @@
 			<div class="nav-wrapper light-blue darken-1">
 				<a href="#" class="logo">Logo</a>
 				<ul class="right">
-					<li><a href="#">Features</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#features">Features</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 	</header>
-	<!-- First Row and content -->
+	<!-- Welcome and content -->
+	<div class="row welcome">
+		<div class="large-6 columns center">
+			<h2>Daniel</h2>
+		</div>
+		<!-- First Form -->
+		<div class="large-6 columns form_cont  white">
+			<form classs="col s12">
+				<!-- Name -->
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="name" type="text" class="validate">
+	          			<label for="name">Your Name</label>
+					</div>
+				</div>
+				<!-- First Email -->
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<!-- Phone and Birthdate -->
+				<div class="row">
+					<!-- Phone -->
+					<div class="input-field col s6">
+						<input id="icon_telephone" type="tel" class="validate">
+						<label for="icon_telephone">Telephone</label>
+					</div>
+					<!-- Birthdate -->
+					<div class="input-field col s6">
+						<input id="date" type="date" class="datepicker">
+						<label for="date">Birthdate</label>
+					</div>
+				</div>
+				<button class="btn waves-effect waves-light z-depth-2 red" type="submit" name="action">Submit <i class="mdi-content-send right"></i></button>
+			</form>
+		</div>
+	</div>
 	<div class="row">
-		<!-- slide Image -->
-		<div class="large-12 columns">
-			<figure class="img_s">
+		<!-- slide Image | Parallax -->
+		<div class="parallax-container black-img">
+			<div class="parallax">
 				<img src="img/bridge.jpg" alt="">
-			</figure>
+			</div>
 		</div>
 			
 			<!-- Features -->
-			<div class="large-12 columns center-align features light-blue-text text-darken-3 blue-grey lighten-5">
+			<div id="features" class="large-12 columns center-align features light-blue-text text-darken-3 blue-grey lighten-5">
 				<h2>Features</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
@@ -43,7 +81,7 @@
 		<div class="row blue-grey lighten-4">
 
 			<!-- Features | Left -->
-			<div class="medium-3 large-3 columns box1 light-blue-text text-darken-3 f_left">
+			<div class=" small-12 medium-4 large-3 columns box1 light-blue-text text-darken-3 f_left">
 				<div class="large-12 columns">
 					<div class="info_f">
 						<h3>Quantum</h3>
@@ -55,24 +93,22 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quaerat, obcaecati possimus sit distinctio soluta.</p>
 					</div>
 
-					<div class="info_f">
-						<h3>Quantum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-					</div>
 				</div>
 			</div>
 
 			<!-- Features | Image Center -->
-			<div class="medium-6 large-6 columns box1">
-				<figure><img src="img/compu.png" alt=""></figure>
+			<div class="medium-4 large-6 columns box1">
+				<figure>
+					<img class="img_size" src="img/compu.png" alt="">
+				</figure>
 			</div>
 
 			<!-- Features | Right -->
-			<div class="medium-3 large-3 columns box1 light-blue-text text-darken-3 f_right">
+			<div class="small-12 medium-4 large-3 columns box1 light-blue-text text-darken-3 f_right">
 				<div class="large-12 columns">
 					<div class="info_f">
 						<h3>Quantum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quaerat, obcaecati possimus sit distinctio soluta.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quaerat, obcaecati.</p>
 					</div>
 
 					<div class="info_f">
@@ -80,46 +116,58 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 
-					<div class="info_f">
-						<h3>Quantum</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quaerat, obcaecati possimus sit distinctio soluta.</p>
-					</div>
+					
 				</div>
 			</div>
 		</div>
 
+		<!-- Clients -->
+		<div class="row blue-grey lighten-5 center clients">
+			<div class="large-3 columns"><p>Logo</p></div>
+			<div class="large-3 columns"><p>Logo</p></div>
+			<div class="large-3 columns"><p>Logo</p></div>
+			<div class="large-3 columns"><p>Logo</p></div>
+		</div>
+		
 		<!-- About -->
-		<div class="large-12 columns red lighten-1 white-text center about">
+		<div id="about" class="large-12 columns red lighten-1 white-text center about">
 			<h2>About us</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic qui rem, aspernatur nemo quo recusandae quae minus sed nostrum aperiam eaque ex assumenda praesentium, fuga, distinctio omnis natus architecto ea.</p>
 		</div>
 
-		<!-- Social -->
+		<!-- Social | Slide -->
 		<div class="large-12 columns blue-grey lighten-5">
 			<h3>Slide</h3>
 		</div>
 
-		<!-- Clients -->
-		<div class="row blue-grey lighten-4 center clients">
-			<div class="large-3 columns"><p>Logo</p></div>
-			<div class="large-3 columns"><p>Logo</p></div>
-			<div class="large-3 columns"><p>Logo</p></div>
-			<div class="large-3 columns"><p>Logo</p></div>
-		</div>
-
 		<!-- Email -->
-		<div class="row">
-			<form class="col s12">
+		<div id="contact" class="row footer">
+			<div class="larger-12 columns center">
+				<h2>Casa</h2>
+			</div>
+			<div class="emailTo">
 				<div class="input-field col s12">
-					<input id="email" type="email" class="validate">
-					<label for="email">Email</label>
+					<input id="email_2" type="email" class="validate">
+					<label for="email_2" class="active">Email</label>
+					<button class="btn waves-effect waves-light red lighten-1">Submit<i class="mdi-content-send right"></i></button>
 				</div>
-				
-			</form>
+			</div>
 			
 		</div>
+			
+		
 	</div>
 	<script src="lib/vendor/jquery.js"></script>
-	<script scr="js/materialize.js"></script>
+	<script src="js/materialize.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.parallax').parallax();
+
+			$('.datepicker').pickadate({
+				selectMonths: true,
+				selectYears: 90
+			});
+		});
+	</script>
 </body>
 </html>
