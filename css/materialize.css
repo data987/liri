@@ -1606,7 +1606,7 @@
   color: transparent !important; }
 
 .black {
-  background-color: #000000 !important; }
+  background-color: #000000!important; }
 
 .black-text {
   color: #000000 !important; }
@@ -7593,7 +7593,7 @@ select {
  */
 .picker__day--today {
   position: relative;
-  color: #595959;
+  color: #ef5350;
   letter-spacing: -.3;
   padding: .75rem 0;
   font-weight: 400;

@@ -114,10 +114,14 @@ p
 	position absolute
 	top 8em
 	z-index 2
+	
+.waves-effect.waves-teal .waves-ripple {
+    background-color rgba(#ef9a9a, 0.7) 
+}
 
 /*
 	=========================================
-	Label's color
+	Label's colors
 	=========================================
 */	
 /* label focus color */
@@ -141,5 +145,33 @@ p
   border-bottom 1px solid #42a5f5
   box-shadow 0 1px 0 0 #42a5f5
 }
-   
+
+/*
+	=========================================
+	Picker Birthdate's colors
+	=========================================
+*/	
+.picker__date-display {
+  background-color #ef5350
+}
+  
+.picker__weekday-display {
+  background-color #e53935
+}
+
+.picker__day.picker__day--today {
+  color #e53935
+}
+  
+.picker__day--selected, .picker__day--selected:hover, .picker--focused .picker__day--selected {
+  background-color #e53935
+}
+
+.picker__close, .picker__today {
+  color #e53935
+}
+
+.picker__nav--prev:hover, .picker__nav--next:hover {
+  background #ffcdd2
+}
 
