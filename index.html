@@ -10,11 +10,13 @@
 	<link rel="stylesheet" href="css/styles.css">
 	<link rel="stylesheet" href="css/icons.css">
 	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.css">
 	<script src="lib/vendor/modernizr.js"></script>
 </head>
 <body>
 	<!-- Menu -->
-	<header class="menu">
+	<header class="menu z-depth-3">
 		<nav>
 			<div class="nav-wrapper light-blue darken-1">
 				<a href="#" class="logo">Logo</a>
@@ -26,7 +28,7 @@
 			</div>
 		</nav>
 	</header>
-	<!-- Welcome and content -->
+	<!-- Welcome -->
 	<div class="row welcome">
 		<div class="large-6 columns white-text">
 			<h3>Welcome to Liri</h3>
@@ -40,6 +42,12 @@
 			</di>
 			<di class="large-6">
 				<a href="#"><i class="small icon-dribbble2"></i></a>
+			</di>
+			<di class="large-6">
+				<a href="#"><i class="small icon-vimeo2"></i></a>
+			</di>
+			<di class="large-6">
+				<a href="#"><i class="small icon-linkedin"></i></a>
 			</di>
 		</div>
 		<!-- First Form -->
@@ -77,21 +85,20 @@
 			</form>
 		</div>
 	</div>
-	<div class="row">
-		<!-- slide Image | Parallax -->
+		<!-- Image | Parallax -->
 		<div class="parallax-container black-img">
 			<div class="parallax">
-				<img src="img/bridge.jpg" alt="">
+				<img src="img/photo-1.jpg" alt="">
 			</div>
 		</div>
+	<div class="row">
 			
 			<!-- Features -->
-			<div class="large-12 columns center-align features light-blue-text text-darken-3 blue-grey lighten-5">
+			<div id="features" class="large-12 columns center-align features light-blue-text text-darken-3 blue-grey lighten-5">
 				<h2>Features</h2>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 			</div>
 
-		<!-- Row 2 | features -->	
 		<div class="row blue-grey lighten-4">
 
 			<!-- Features | Left -->
@@ -136,26 +143,77 @@
 		</div>
 
 		<!-- Clients -->
-		<div class="row blue-grey lighten-5 center clients">
-			<div class="large-3 columns"><p>Logo</p></div>
-			<div class="large-3 columns"><p>Logo</p></div>
-			<div class="large-3 columns"><p>Logo</p></div>
-			<div class="large-3 columns"><p>Logo</p></div>
+		<div class="row blue-grey lighten-3 center clients">
+			<div class="large-3 columns">
+				<figure>
+					<img src="img/logo-1.png" alt="">
+				</figure>
+			</div>
+			<div class="large-3 columns">
+				<figure>
+					<img src="img/logo-2.png" alt="">
+				</figure>
+			</div>
+			<div class="large-3 columns">
+				<figure>
+					<img src="img/logo-3.png" alt="">
+				</figure>
+			</div>
+			<div class="large-3 columns">
+				<figure>
+					<img src="img/logo-4.png" alt="">
+				</figure>
+			</div>
 		</div>
 		
 		<!-- About -->
-		<div id="about" class="large-12 columns red lighten-1 white-text center about">
+		<div id="about" class="large-12 columns  white-text center red lighten-1 about">
 			<h2>About us</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic qui rem, aspernatur nemo quo recusandae quae minus sed nostrum aperiam eaque ex assumenda praesentium, fuga, distinctio omnis natus architecto ea.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic qui rem, aspernatur nemo quo recusa	ndae quae minus sed nostrum aperiam eaque ex assumenda praesentium, fuga, distinctio omnis natus architecto ea.</p>
 		</div>
-
+			
 		<!-- Social | Slide -->
-		<div class="large-12 columns blue-grey lighten-5">
-			<h3>Slide</h3>
+		<div class="large-12 columns blue-grey lighten-4 slide_clients valign-wrapper">
+			<div id="owl-demo" class="owl-carousel owl-theme">
+				<!-- Quote -->
+				<div class="item">
+					<div class="small-12 large-3 columns quote">
+						<i class="medium icon-quotes-left"></i>
+					</div>
+					<!-- Client Comment -->
+					<div class="medium-12 large-6 columns center">
+						<h4>Great item and i am so happy with the customer service , great environment and a lovely experience</h4>
+						<span>Charlotte Sellers, CEO and Founder</span>
+					</div>
+					<!-- Photo Client | Profile -->
+					<div class="medium-12 large-3 columns center">
+						<figure class="profile">
+							<img src="img/p-1.jpg" width="150px" height="auto" alt="">
+						</figure>
+					</div>
+				</div>
+				<div class="item">
+					<div class="small-12 large-3 columns quote">
+						<i class="medium icon-quotes-left"></i>
+					</div>
+					<!-- Client Comment -->
+					<div class="medium-12 large-6 columns center">
+						<h4>Great item and i am so happy with the customer service , great environment and a lovely experience</h4>
+						<span>Charlotte Sellers, CEO and Founder</span>
+					</div>
+					<!-- Photo Client | Profile -->
+					<div class="medium-12 large-3 columns center">
+						<figure class="profile">
+							<img src="img/p-2.jpg" width="150px" height="auto" alt="">
+						</figure>
+					</div>
+				</div>
+
+			</div>
 		</div>
 
-		<!-- Email -->
-		<div class="footer">
+		<!-- Email | footer -->
+		<div id="contact" class="contact">
 			
 			<div class="row">
 				<div class="larger-12 columns center light-blue-text text-darken-3">
@@ -163,14 +221,13 @@
 
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></br>
 				</div>
-				<div class="emailTo">
+				<div class="email">
 					<div class="input-field col s12">
 						<input id="email_2" type="email" class="validate">
 						<label for="email_2" class="active">Email</label>
-						<button class="btn waves-effect waves-light red lighten-1">Submit<i class="mdi-content-send right"></i></button>
+						<button class="btn waves-effect waves-light red lighten-1" type="submit" name="action">Submit<i class="mdi-content-send right"></i></button>
 					</div>
 				</div>
-				
 			</div>	
 		</div>
 	</div>
@@ -180,14 +237,33 @@
 	<script src="js/foundation.js"></script>
 	<script src="js/foundation.orbit.js"></script>
 	<script src="js/materialize.js"></script>
+	<script src="js/owl.carousel.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.parallax').parallax();
 
+			// PICKER BIRTHDAY
 			$('.datepicker').pickadate({
 				selectMonths: true,
 				selectYears: 90
 			});
+
+			// CAROUSEL
+			$("#owl-demo").owlCarousel({
+ 
+		       // Show next and prev buttons
+		      slideSpeed : 800,
+		      paginationSpeed : 600,
+		      singleItem:true
+		 
+		      // "singleItem:true" is a shortcut for:
+		      // items : 1, 
+		      // itemsDesktop : false,
+		      // itemsDesktopSmall : false,
+		      // itemsTablet: false,
+		      // itemsMobile : false
+		 
+		  	});
 		});
 	</script>
 </body>

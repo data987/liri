@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'liri';
-	src:url('../font/social_icons/liri.eot?-1i9z0w');
-	src:url('../font/social_icons/liri.eot?#iefix-1i9z0w') format('embedded-opentype'),
-		url('../font/social_icons/liri.ttf?-1i9z0w') format('truetype'),
-		url('../font/social_icons/liri.woff?-1i9z0w') format('woff'),
-		url('../font/social_icons/liri.svg?-1i9z0w#icomoon') format('svg');
+	src:url('../font/icons_2/liri.eot?-yeuemj');
+	src:url('../font/icons_2/liri.eot?#iefix-yeuemj') format('embedded-opentype'),
+		url('../font/icons_2/liri.ttf?-yeuemj') format('truetype'),
+		url('../font/icons_2/liri.woff?-yeuemj') format('woff'),
+		url('../font/icons_2/liri.svg?-yeuemj#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,6 +23,12 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-quotes-left:before {
+	content: "\e977";
+}
+.icon-quotes-right:before {
+	content: "\e978";
+}
 .icon-facebook:before {
 	content: "\ea8c";
 }
@@ -91,4 +97,7 @@
 }
 .icon-pinterest:before {
 	content: "\ead0";
+}
+.icon-pinterest2:before {
+	content: "\ead1";
 }

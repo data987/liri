@@ -43,20 +43,24 @@ h2 {
 h3 {
   font-weight: 200;
 }
+h4 {
+  font-size: 2em;
+  font-weight: 200;
+}
 p {
   font-size: 1em;
   font-weight: 200;
 }
 /*** About ***/
 .about {
-  padding: 5em;
+  padding: 5em 0;
 }
 .about p {
   font-size: 1.5em;
+  padding: 0 5em;
 }
-.emailTo {
-  max-width: 40%;
-  margin: 0 auto;
+.contact {
+  padding-bottom: 4em;
 }
 .box1 {
   overflow: hidden;
@@ -67,34 +71,30 @@ p {
   padding: 3em 0 0 0;
 }
 .black-img {
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.4);
 }
 /*** Clients ***/
-.clients p {
-  padding: 5em;
+.clients figure {
+  padding: 5em 0;
 }
 /*** Email ***/
-.emailTo {
-  width: 100%;
+.email {
+  margin: 0 auto;
+  max-width: 40%;
 }
 /*** Features ***/
 .features {
-  padding: 5em;
+  padding: 5em 0;
 }
 .features p {
   font-size: 1.5em;
+  padding: 0 5em;
 }
 .f_left {
   text-align: right;
 }
 .f_right {
   text-align: left;
-}
-.footer {
-  padding: 28em 0 3em 0;
-}
-.footer p {
-  font-size: 1.3em;
 }
 .form_cont {
   height: 50vh;
@@ -114,13 +114,41 @@ p {
 .menu {
   position: fixed;
   width: 100%;
-  z-index: 4;
+  z-index: 100;
+}
+.profile img {
+  border: 5px solid #42a5f5;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.quote {
+  text-align: right;
+}
+.quote i {
+  padding-right: 0.4em;
+}
+.slide_clients {
+  height: 100%;
+  padding: 5em 0;
 }
 .welcome {
   padding: 0 2em 0 2em;
   position: absolute;
   top: 8em;
   z-index: 2;
+}
+.welcome a {
+  color: #fff;
+  margin-right: 1em;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.welcome a:hover {
+  color: #29b6f6;
 }
 .waves-effect.waves-teal .waves-ripple {
   background-color: rgba(239,154,154,0.7);
