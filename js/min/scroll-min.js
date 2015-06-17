@@ -1,0 +1,1 @@
+$(function(){$('a[href^="#"]').click(function(){var t=$(this).attr("href"),i=t.slice(1),o=$("div[id='"+i+"']");$("html, body").animate({scrollTop:o.offset().top},"slow")})});

@@ -102,6 +102,24 @@ p {
   padding: 2em 5em 2em 5em;
   width: 45%;
 }
+.footer {
+  padding: 5em 0;
+}
+.footer a {
+  color: #fff;
+  margin-right: 1em;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.footer a:hover {
+  color: #29bbff;
+}
+.footer p {
+  margin-top: 1em;
+}
 .img_size {
   max-width: 100% !important;
 }
@@ -284,6 +302,12 @@ p {
   }
   .logo {
     font-size: 2em;
+  }
+  .logo img {
+    width: 25%;
+  }
+  .menu_cont a {
+    padding: 0 0.5em;
   }
   .parallax-container {
     height: 55em;
