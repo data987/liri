@@ -24,6 +24,7 @@
 }
 
 .icon-quotes-left:before {
+	color: #1f87de;
 	content: "\e977";
 }
 .icon-quotes-right:before {

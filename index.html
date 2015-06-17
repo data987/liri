@@ -12,14 +12,16 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.css">
+    <link rel="stylesheet" href="css/animate.css">
 	<script src="lib/vendor/modernizr.js"></script>
 </head>
 <body>
 	<!-- Menu -->
-	<header class="menu z-depth-3">
+	<header class="menu z-depth-4">
 		<nav>
 			<div class="nav-wrapper light-blue darken-1">
-				<a href="#" class="logo">Logo</a>
+				<a href="#" class="logo">Liri</a>
+					
 				<ul class="right">
 					<li><a href="#features">Features</a></li>
 					<li><a href="#about">About</a></li>
@@ -30,7 +32,7 @@
 	</header>
 	<!-- Welcome -->
 	<div class="row welcome">
-		<div class="large-6 columns white-text">
+		<div class="large-6 columns white-text wow fadeInDown" data-wow-delay=".5s">
 			<h3>Welcome to Liri</h3>
 			<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus quasi repellendus porro, a quia. Laborum impedit, explicabo commodi. Incidunt minima minus doloribus vel adipisci, totam aperiam explicabo esse accusamus voluptas!</p></blockquote>
 			<!-- Social icons -->
@@ -51,7 +53,7 @@
 			</di>
 		</div>
 		<!-- First Form -->
-		<div class="large-6 columns form_cont  white z-depth-3">
+		<div class="large-6 columns form_cont  white z-depth-3 wow fadeInRight" data-wow-delay="1s">
 			<form classs="col s12">
 				<!-- Name -->
 				<div class="row">
@@ -93,23 +95,23 @@
 		</div>
 	<div class="row">
 			
-			<!-- Features -->
-			<div id="features" class="large-12 columns center-align features light-blue-text text-darken-3 blue-grey lighten-5">
-				<h2>Features</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-			</div>
-
+		<!-- Features -->
+		<div id="features" class="large-12 columns center-align features light-blue-text text-darken-3 blue-grey lighten-5">
+			<h2>Features</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+		</div>
+		<!-- Info Features -->
 		<div class="row blue-grey lighten-4">
 
 			<!-- Features | Left -->
-			<div class=" small-12 medium-4 large-3 columns box1 light-blue-text text-darken-3 f_left">
+			<div class=" small-12 medium-3 large-3 columns box1 light-blue-text text-darken-3 f_left">
 				<div class="large-12 columns">
-					<div class="info_f">
+					<div class="info_f wow fadeInLeft" data-wow-delay=".5s">
 						<h3>Quantum</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
 
-					<div class="info_f">
+					<div class="info_f wow fadeInLeft" data-wow-delay=".7s">
 						<h3>Quantum</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quaerat, obcaecati possimus sit distinctio soluta.</p>
 					</div>
@@ -118,21 +120,21 @@
 			</div>
 
 			<!-- Features | Image Center -->
-			<div class="medium-4 large-6 columns box1">
-				<figure>
+			<div class="medium-6 large-6 columns box1">
+				<figure class="wow fadeInUp" data-wow-delay="1s">
 					<img class="img_size" src="img/compu.png" alt="">
 				</figure>
 			</div>
 
 			<!-- Features | Right -->
-			<div class="small-12 medium-4 large-3 columns box1 light-blue-text text-darken-3 f_right">
+			<div class="small-12 medium-3 large-3 columns box1 light-blue-text text-darken-3 f_right">
 				<div class="large-12 columns">
-					<div class="info_f">
+					<div class="info_f wow fadeInRight" data-wow-delay=".7s">
 						<h3>Quantum</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo quaerat, obcaecati.</p>
 					</div>
 
-					<div class="info_f">
+					<div class="info_f wow fadeInRight" data-wow-delay=".5s">
 						<h3>Quantum</h3>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
 					</div>
@@ -144,23 +146,23 @@
 
 		<!-- Clients -->
 		<div class="row blue-grey lighten-3 center clients">
-			<div class="large-3 columns">
-				<figure>
+			<div class="medium-3 large-3 columns">
+				<figure class="wow fadeInDown" data-wow-delay=".5s">
 					<img src="img/logo-1.png" alt="">
 				</figure>
 			</div>
-			<div class="large-3 columns">
-				<figure>
+			<div class="medium-3 large-3 columns">
+				<figure class="wow fadeInDown" data-wow-delay=".7s">
 					<img src="img/logo-2.png" alt="">
 				</figure>
 			</div>
-			<div class="large-3 columns">
-				<figure>
+			<div class="medium-3 large-3 columns">
+				<figure class="wow fadeInDown" data-wow-delay=".9s">
 					<img src="img/logo-3.png" alt="">
 				</figure>
 			</div>
-			<div class="large-3 columns">
-				<figure>
+			<div class="medium-3 large-3 columns">
+				<figure class="wow fadeInDown" data-wow-delay="1s">
 					<img src="img/logo-4.png" alt="">
 				</figure>
 			</div>
@@ -176,8 +178,8 @@
 		<div class="large-12 columns blue-grey lighten-4 slide_clients valign-wrapper">
 			<div id="owl-demo" class="owl-carousel owl-theme">
 				<!-- Quote -->
-				<div class="item">
-					<div class="small-12 large-3 columns quote">
+				<div class="item wow bounceInLeft">
+					<div class="small-12 medium-12 large-3 columns quote">
 						<i class="medium icon-quotes-left"></i>
 					</div>
 					<!-- Client Comment -->
@@ -216,17 +218,22 @@
 		<div id="contact" class="contact">
 			
 			<div class="row">
-				<div class="larger-12 columns center light-blue-text text-darken-3">
+				<div class="larger-12 columns center light-blue-text text-darken-3 wow fadeInUp" data-wow-delay=".5s">
 					<h3>Subscribe to our newsletter</h3>
 
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p></br>
 				</div>
+				<!-- input email 2 -->
 				<div class="email">
-					<div class="input-field col s12">
+					<div class="input-field col s12 wow fadeInUp" data-wow-delay=".9s">
 						<input id="email_2" type="email" class="validate">
 						<label for="email_2" class="active">Email</label>
 						<button class="btn waves-effect waves-light red lighten-1" type="submit" name="action">Submit<i class="mdi-content-send right"></i></button>
 					</div>
+				</div>
+				<!-- footer -->
+				<div class="large-12 columns center">
+					
 				</div>
 			</div>	
 		</div>
@@ -238,6 +245,7 @@
 	<script src="js/foundation.orbit.js"></script>
 	<script src="js/materialize.js"></script>
 	<script src="js/owl.carousel.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
 			$('.parallax').parallax();
@@ -264,6 +272,9 @@
 		      // itemsMobile : false
 		 
 		  	});
+
+		  	// WOW animation
+		  	new WOW().init();
 		});
 	</script>
 </body>
