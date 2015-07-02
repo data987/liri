@@ -1,0 +1,325 @@
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+*,
+.columns {
+  margin: 0;
+  padding: 0;
+}
+/*** SMACSS ***/
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.padding-top-1 {
+  padding-top: 1em;
+}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+/*** Normal CSS ***/
+blockquote {
+  border-left: 5px solid #ef5350;
+}
+body {
+  font-family: 'Roboto';
+  font-size: 14px;
+}
+h2 {
+  font-weight: 400;
+  padding-bottom: 0.2em;
+}
+h3 {
+  font-weight: 200;
+}
+h4 {
+  font-size: 2em;
+  font-weight: 200;
+}
+p {
+  font-size: 1em;
+  font-weight: 200;
+}
+/*** About ***/
+.about {
+  padding: 5em 0;
+}
+.about p {
+  font-size: 1.5em;
+  padding: 0 3em;
+}
+.contact {
+  padding-bottom: 4em;
+}
+.box1 {
+  overflow: hidden;
+  height: 38rem;
+  padding: 2em;
+}
+.box-white {
+  padding: 3em 0 0 0;
+}
+.black-img {
+  background-color: rgba(0,0,0,0.4);
+}
+/*** Clients ***/
+.clients figure {
+  padding: 5em 0;
+}
+/*** Email ***/
+.email {
+  margin: 0 auto;
+  max-width: 40%;
+}
+/*** Features ***/
+.features {
+  padding: 5em 0;
+}
+.features p {
+  font-size: 1.5em;
+  padding: 0 3em;
+}
+.f_left {
+  text-align: right;
+}
+.f_right {
+  text-align: left;
+}
+.form_cont {
+  height: 50vh;
+  margin-top: 2em;
+  padding: 2em 5em 2em 5em;
+  width: 45%;
+}
+.footer {
+  padding: 5em 0;
+}
+.footer a {
+  color: #fff;
+  margin-right: 1em;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.footer a:hover {
+  color: #29bbff;
+}
+.footer p {
+  margin-top: 1em;
+}
+.img_size {
+  max-width: 100% !important;
+}
+/*** Info of features ***/
+.info_f {
+  padding: 1.4em;
+}
+.logo {
+  color: #01579b;
+  font-size: 3em;
+  font-weight: 300;
+  margin-left: 0.4em;
+}
+.menu {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+.profile img {
+  border: 5px solid #42a5f5;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  overflow: hidden;
+}
+.quote {
+  text-align: right;
+}
+.quote i {
+  padding-right: 0.4em;
+}
+.slide_clients {
+  height: 100%;
+  padding: 5em 0;
+}
+.welcome {
+  padding: 0 2em 0 2em;
+  position: absolute;
+  top: 8em;
+  z-index: 2;
+}
+.welcome a {
+  color: #fff;
+  margin-right: 1em;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+.welcome a:hover {
+  color: #29b6f6;
+}
+.waves-effect.waves-teal .waves-ripple {
+  background-color: rgba(239,154,154,0.7);
+}
+/*
+	=========================================
+	Label's colors
+	=========================================
+*/
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #42a5f5;
+}
+.input-field input[type=email]:focus + label {
+  color: #42a5f5;
+}
+.input-field input[type=tel]:focus + label {
+  color: #42a5f5;
+}
+.input-field input[type=password]:focus + label {
+  color: #42a5f5;
+}
+.input-field input[type=date]:focus + label {
+  color: #42a5f5;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus,
+.input-field input[type=email]:focus,
+.input-field input[type=tel]:focus,
+.input-field input[type=password]:focus,
+.input-field input[type=date]:focus {
+  border-bottom: 1px solid #42a5f5;
+  -webkit-box-shadow: 0 1px 0 0 #42a5f5;
+  box-shadow: 0 1px 0 0 #42a5f5;
+}
+/*
+	=========================================
+	Picker Birthdate's colors
+	=========================================
+*/
+.picker__date-display {
+  background-color: #ef5350;
+}
+.picker__weekday-display {
+  background-color: #e53935;
+}
+.picker__day.picker__day--today {
+  color: #e53935;
+}
+.picker__day--selected,
+.picker__day--selected:hover,
+.picker--focused .picker__day--selected {
+  background-color: #e53935;
+}
+.picker__close,
+.picker__today {
+  color: #e53935;
+}
+.picker__nav--prev:hover,
+.picker__nav--next:hover {
+  background: #ffcdd2;
+}
+/*
+	=========================================
+	Media Queries
+	=========================================
+*/
+/* ----------- Tablets ----------- */
+/* Portrait */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .box1 {
+    height: 100%;
+    padding: 2em 0;
+  }
+  .box1 figure {
+    line-height: 25em;
+  }
+  .clients figure {
+    padding: 3em 0;
+  }
+  .form_cont {
+    width: 100%;
+  }
+  .img_size {
+    width: 100%;
+  }
+  .parallax-container {
+    height: 55em;
+  }
+  .quote {
+    text-align: center;
+  }
+  .quote i {
+    padding-right: 0;
+  }
+}
+/* ----------- Moviles ----------- */
+@media only screen and (min-width: 320px) and (max-width: 568px) {
+  .about {
+    padding: 3em 0;
+  }
+  .about p {
+    font-size: 1.3em;
+    padding: 0 2em;
+  }
+  .box1 {
+    height: 100%;
+    padding: 1em 1em;
+  }
+  .box1 figure {
+    line-height: 25em;
+  }
+  .clients figure {
+    padding: 2em 0;
+  }
+  .form_cont {
+    height: 100%;
+    padding: 1.5em 2em 2em 2em;
+    width: 100%;
+  }
+  .info_f {
+    text-align: center;
+  }
+  .item {
+    padding: 0 1.5em;
+  }
+  .item h4 {
+    font-size: 1.4em;
+  }
+  .logo {
+    font-size: 2em;
+  }
+  .logo img {
+    width: 25%;
+  }
+  .menu_cont a {
+    padding: 0 0.5em;
+  }
+  .parallax-container {
+    height: 55em;
+  }
+  .quote {
+    text-align: center;
+  }
+  .quote i {
+    padding-right: 0;
+  }
+  .welcome {
+    padding: 0 1em;
+    top: 5em;
+  }
+}
